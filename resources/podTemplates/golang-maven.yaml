@@ -3,14 +3,9 @@ kind: Pod
 spec:
   containers:
   - name: maven
-    image: maven:3.8.1-jdk-8
-    command:
-    - sleep
+    image: maven:3.8.1-adoptopenjdk-11
     args:
-    - 99d
+    - "-v"
+    - "/root/.m2:/root/.m2"
   - name: golang
     image: golang:1.16.5
-    command:
-    - sleep
-    args:
-    - 99d

@@ -2,10 +2,10 @@ apiVersion: v1
 kind: Pod
 metadata:
   labels:
-    name: secureCID-agent
+    name: securecicd-agent
 spec:
   containers:
-  - name: secureCID-agent
+  - name: securecicd-agent
     image: rkadekar/jenkins-build-agent:latest
     tty: true
     securityContext:

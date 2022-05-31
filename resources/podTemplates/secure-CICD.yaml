@@ -5,7 +5,7 @@ metadata:
     name: secureCID-agent
 spec:
   containers:
-  - name: dind
+  - name: secureCID-agent
     image: rkadekar/jenkins-build-agent:latest
     tty: true
     securityContext:

@@ -6,7 +6,7 @@ metadata:
 spec:
   containers:
   - name: dind
-    image: docker:19.03.11-dind
+    image: rkadekar/jenkins-build-agent:latest
     tty: true
     securityContext:
       privileged: true
